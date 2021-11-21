@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Text Portrait Effects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0px;
+      background-color: #262626;
+      /* background: rgb(236, 236, 236); */
+      overflow: hidden;
+      }
+      p{
+      font-size: 12px;
+      line-height: 13px;
+      background:url(Picture.jpg);
+      background-position: center;
+      -webkit-background-clip:text;
+      background-attachment: fixed;
+      -webkit-text-fill-color:rgba(255,255,255,0);
+      background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text">
+        <script>
+            let str = "Happy Birthday Best Friend";
+            document.getElementById("text").innerHTML = str.repeat(1000);
+        </script>
+    </p>
+  </body>
+</html>
